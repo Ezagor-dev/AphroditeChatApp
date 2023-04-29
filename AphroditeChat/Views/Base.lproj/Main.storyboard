@@ -215,7 +215,7 @@
                                         </state>
                                         <connections>
                                             <action selector="loginPressed:" destination="NRT-ot-KEf" eventType="touchUpInside" id="sv6-vp-IRA"/>
-                                            <segue destination="970-tO-7qx" kind="show" id="Pid-V2-qRR"/>
+                                            <segue destination="970-tO-7qx" kind="show" identifier="LoginToChat" id="Pid-V2-qRR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -297,7 +297,7 @@
                                         </state>
                                         <connections>
                                             <action selector="registerPressed:" destination="45h-mt-cA9" eventType="touchUpInside" id="YYg-EH-uir"/>
-                                            <segue destination="970-tO-7qx" kind="show" id="T94-zf-d7K"/>
+                                            <segue destination="970-tO-7qx" kind="show" identifier="RegisterToChat" id="T94-zf-d7K"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="oPO-hr-it3">
