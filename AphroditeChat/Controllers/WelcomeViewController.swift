@@ -14,6 +14,8 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        // I installed https://cocoapods.org/ 
+        
         titleLabel.text = ""
         var charIndex = 0
         
