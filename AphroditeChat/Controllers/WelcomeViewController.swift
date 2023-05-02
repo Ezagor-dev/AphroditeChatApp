@@ -17,6 +17,9 @@ class WelcomeViewController: UIViewController {
         
         // I installed https://cocoapods.org/ 
         
+        titleLabel.text = "⚕Aphrodite"
+        
+        
 //        titleLabel.text = ""
 //        var charIndex = 0
 //
