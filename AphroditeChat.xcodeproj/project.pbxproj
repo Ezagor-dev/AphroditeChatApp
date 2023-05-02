@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA166A668B81C037256BBF6F /* Pods_AphroditeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113F35288E232556D29F8FB5 /* Pods_AphroditeChat.framework */; };
 		E6D82AB829FC075700C46460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D82AB729FC075700C46460 /* AppDelegate.swift */; };
 		E6D82ABA29FC075700C46460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D82AB929FC075700C46460 /* SceneDelegate.swift */; };
 		E6D82ABC29FC075700C46460 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D82ABB29FC075700C46460 /* WelcomeViewController.swift */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		113F35288E232556D29F8FB5 /* Pods_AphroditeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AphroditeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E6F063449F08570296FB189 /* Pods-AphroditeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AphroditeChat.debug.xcconfig"; path = "Target Support Files/Pods-AphroditeChat/Pods-AphroditeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		E6D82AB429FC075700C46460 /* AphroditeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AphroditeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D82AB729FC075700C46460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6D82AB929FC075700C46460 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		E6D82ACD29FC080B00C46460 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E6D82ACF29FC081700C46460 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E6D82AD129FC082700C46460 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		FB697C83A69226AA49390712 /* Pods-AphroditeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AphroditeChat.release.xcconfig"; path = "Target Support Files/Pods-AphroditeChat/Pods-AphroditeChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA166A668B81C037256BBF6F /* Pods_AphroditeChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CFE02D9CADB37623FA788B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E6F063449F08570296FB189 /* Pods-AphroditeChat.debug.xcconfig */,
+				FB697C83A69226AA49390712 /* Pods-AphroditeChat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E6D82AAB29FC075700C46460 = {
 			isa = PBXGroup;
 			children = (
 				E6D82AB629FC075700C46460 /* AphroditeChat */,
 				E6D82AB529FC075700C46460 /* Products */,
+				5CFE02D9CADB37623FA788B1 /* Pods */,
+				FEBDAE14C040841A0EFFF9ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +109,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		FEBDAE14C040841A0EFFF9ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				113F35288E232556D29F8FB5 /* Pods_AphroditeChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6D82AC829FC075800C46460 /* Build configuration list for PBXNativeTarget "AphroditeChat" */;
 			buildPhases = (
+				2B7DD3792118B4DF3CDEB9D0 /* [CP] Check Pods Manifest.lock */,
 				E6D82AB029FC075700C46460 /* Sources */,
 				E6D82AB129FC075700C46460 /* Frameworks */,
 				E6D82AB229FC075700C46460 /* Resources */,
+				8512542DC49E59D07237652C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +184,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B7DD3792118B4DF3CDEB9D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AphroditeChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8512542DC49E59D07237652C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AphroditeChat/Pods-AphroditeChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AphroditeChat/Pods-AphroditeChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AphroditeChat/Pods-AphroditeChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E6D82AB029FC075700C46460 /* Sources */ = {
@@ -310,6 +379,7 @@
 		};
 		E6D82AC929FC075800C46460 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E6F063449F08570296FB189 /* Pods-AphroditeChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -339,6 +409,7 @@
 		};
 		E6D82ACA29FC075800C46460 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB697C83A69226AA49390712 /* Pods-AphroditeChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
