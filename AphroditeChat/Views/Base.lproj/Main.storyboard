@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Welcome View Controller-->
+        <!--WelcomeViewController-->
         <scene sceneID="b8p-mF-GLW">
             <objects>
-                <viewController id="BaH-bC-50l" customClass="WelcomeViewController" customModule="AphroditeChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="WelcomeViewController" id="BaH-bC-50l" customClass="WelcomeViewController" customModule="AphroditeChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tFW-5c-GJ3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="823.1884057971015" y="134.59821428571428"/>
         </scene>
-        <!--Chat View Controller-->
+        <!--ChatViewController-->
         <scene sceneID="h7g-ht-Y4b">
             <objects>
-                <viewController id="970-tO-7qx" customClass="ChatViewController" customModule="AphroditeChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ChatViewController" id="970-tO-7qx" customClass="ChatViewController" customModule="AphroditeChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LmF-Ta-js4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -256,7 +256,7 @@
         <!--RegisterViewController-->
         <scene sceneID="Sqv-DP-B8y">
             <objects>
-                <viewController title="RegisterViewController" id="45h-mt-cA9" customClass="RegisterViewController" sceneMemberID="viewController">
+                <viewController title="RegisterViewController" id="45h-mt-cA9" customClass="RegisterViewController" customModule="AphroditeChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pvk-v9-5h1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,8 +296,8 @@
                                             <color key="titleColor" name="BrandBlue"/>
                                         </state>
                                         <connections>
-                                            <action selector="registerPressed:" destination="45h-mt-cA9" eventType="touchUpInside" id="YYg-EH-uir"/>
-                                            <segue destination="970-tO-7qx" kind="show" identifier="RegisterToChat" id="T94-zf-d7K"/>
+                                            <action selector="registerPressed:" destination="45h-mt-cA9" eventType="touchUpInside" id="v88-MG-b7f"/>
+                                            <segue destination="970-tO-7qx" kind="show" identifier="RegisterToChat" id="cJT-Cr-WWV"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="oPO-hr-it3">
@@ -339,6 +339,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1ZJ-wd-GnR"/>
+                    <connections>
+                        <outlet property="emailTextfield" destination="7Xz-Z3-3wh" id="I5T-IV-5kU"/>
+                        <outlet property="passwordTextfield" destination="02Y-wR-y5Y" id="ov8-jB-VGa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Srl-fF-tZp" sceneMemberID="firstResponder"/>
             </objects>
@@ -363,8 +367,11 @@
             <point key="canvasLocation" x="-86.956521739130437" y="134.59821428571428"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="BrR-vP-R0V"/>
+    </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="Pid-V2-qRR"/>
+        <segue reference="cJT-Cr-WWV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
