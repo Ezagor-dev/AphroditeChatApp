@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		CA166A668B81C037256BBF6F /* Pods_AphroditeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 113F35288E232556D29F8FB5 /* Pods_AphroditeChat.framework */; };
 		E604D0CD2A059B180011F931 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E604D0CC2A059B180011F931 /* Alamofire */; };
-		E604D0CF2A05A7310011F931 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E604D0CE2A05A7310011F931 /* GoogleService-Info.plist */; };
 		E604D0D22A05AAFA0011F931 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E604D0D12A05AAFA0011F931 /* FirebaseAuth */; };
 		E604D0D42A05AAFA0011F931 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E604D0D32A05AAFA0011F931 /* FirebaseFirestore */; };
+		E604D0D62A05E0E70011F931 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E604D0D52A05E0E70011F931 /* GoogleService-Info.plist */; };
 		E6D82AB829FC075700C46460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D82AB729FC075700C46460 /* AppDelegate.swift */; };
 		E6D82ABA29FC075700C46460 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D82AB929FC075700C46460 /* SceneDelegate.swift */; };
 		E6D82ABC29FC075700C46460 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D82ABB29FC075700C46460 /* WelcomeViewController.swift */; };
@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		113F35288E232556D29F8FB5 /* Pods_AphroditeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AphroditeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6F063449F08570296FB189 /* Pods-AphroditeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AphroditeChat.debug.xcconfig"; path = "Target Support Files/Pods-AphroditeChat/Pods-AphroditeChat.debug.xcconfig"; sourceTree = "<group>"; };
-		E604D0CE2A05A7310011F931 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E604D0D52A05E0E70011F931 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E6D82AB429FC075700C46460 /* AphroditeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AphroditeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D82AB729FC075700C46460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6D82AB929FC075700C46460 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 				E6D82AC029FC075800C46460 /* Assets.xcassets */,
 				E6D82AC229FC075800C46460 /* LaunchScreen.storyboard */,
 				E6D82AC529FC075800C46460 /* Info.plist */,
-				E604D0CE2A05A7310011F931 /* GoogleService-Info.plist */,
+				E604D0D52A05E0E70011F931 /* GoogleService-Info.plist */,
 			);
 			path = AphroditeChat;
 			sourceTree = "<group>";
@@ -195,7 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6D82AC429FC075800C46460 /* LaunchScreen.storyboard in Resources */,
-				E604D0CF2A05A7310011F931 /* GoogleService-Info.plist in Resources */,
+				E604D0D62A05E0E70011F931 /* GoogleService-Info.plist in Resources */,
 				E6D82AC129FC075800C46460 /* Assets.xcassets in Resources */,
 				E6D82ABF29FC075700C46460 /* Main.storyboard in Resources */,
 			);

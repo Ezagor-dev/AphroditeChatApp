@@ -28,7 +28,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="NRT-ot-KEf" kind="show" id="2cL-BS-xu8"/>
+                                    <segue destination="NRT-ot-KEf" kind="show" identifier="" id="2cL-BS-xu8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚕Aphrodite " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrR-vP-R0V" customClass="CLTypingLabel" customModule="CLTypingLabel">
@@ -152,7 +152,13 @@
                             <constraint firstItem="JP6-RL-Jmh" firstAttribute="leading" secondItem="YIL-Fo-ugl" secondAttribute="leading" id="nlP-lg-Rok"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="wZE-qc-u4a"/>
+                    <navigationItem key="navigationItem" id="wZE-qc-u4a">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="6jQ-xd-VDc">
+                            <connections>
+                                <action selector="logOutPressed:" destination="970-tO-7qx" id="7pc-dK-Fr2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextfield" destination="J95-mp-Ypg" id="mMB-KQ-uUU"/>
                         <outlet property="tableView" destination="JP6-RL-Jmh" id="byt-dL-U7R"/>
@@ -215,7 +221,6 @@
                                         </state>
                                         <connections>
                                             <action selector="loginPressed:" destination="NRT-ot-KEf" eventType="touchUpInside" id="sv6-vp-IRA"/>
-                                            <segue destination="970-tO-7qx" kind="show" identifier="LoginToChat" id="Pid-V2-qRR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -248,6 +253,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="N02-gz-V9X"/>
+                    <connections>
+                        <outlet property="emailTextfield" destination="PKQ-Ck-O8s" id="MUL-8I-CRn"/>
+                        <outlet property="passwordTextfield" destination="mwX-rU-aU9" id="lnE-NU-Wok"/>
+                        <segue destination="970-tO-7qx" kind="show" identifier="LoginToChat" id="Z43-wR-A0b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4W9-e7-TdK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -297,7 +307,6 @@
                                         </state>
                                         <connections>
                                             <action selector="registerPressed:" destination="45h-mt-cA9" eventType="touchUpInside" id="v88-MG-b7f"/>
-                                            <segue destination="970-tO-7qx" kind="show" identifier="RegisterToChat" id="cJT-Cr-WWV"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="oPO-hr-it3">
@@ -342,6 +351,7 @@
                     <connections>
                         <outlet property="emailTextfield" destination="7Xz-Z3-3wh" id="I5T-IV-5kU"/>
                         <outlet property="passwordTextfield" destination="02Y-wR-y5Y" id="ov8-jB-VGa"/>
+                        <segue destination="970-tO-7qx" kind="show" identifier="RegisterToChat" id="53H-ag-GLc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Srl-fF-tZp" sceneMemberID="firstResponder"/>
@@ -368,10 +378,12 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="BrR-vP-R0V"/>
+        <designable name="BrR-vP-R0V">
+            <size key="intrinsicContentSize" width="255" height="48"/>
+        </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="cJT-Cr-WWV"/>
+        <segue reference="53H-ag-GLc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
