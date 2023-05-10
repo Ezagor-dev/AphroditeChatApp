@@ -15,7 +15,7 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "⚕Aphrodite"
         navigationItem.hidesBackButton = true
 
     }
