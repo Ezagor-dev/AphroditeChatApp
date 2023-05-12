@@ -21,7 +21,7 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.delegate = self
         tableView.dataSource = self
         title = K.appName
         navigationItem.hidesBackButton = true
@@ -56,6 +56,10 @@ extension ChatViewController: UITableViewDataSource{
         cell.textLabel?.text = messages[indexPath.row].body
         return cell
     }
-    
-    
+}
+
+extension ChatViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
 }
