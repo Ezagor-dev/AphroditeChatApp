@@ -24,7 +24,6 @@ class WelcomeViewController: UIViewController {
 //        var charIndex = 0
 //
 //        let titleText = "⚕Aphrodite"
-//        navigationItem.hidesBackButton = true
 //        for letter in titleText{
 //            print(charIndex)
 //            print(letter)
