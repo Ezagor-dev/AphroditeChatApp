@@ -17,13 +17,14 @@ class WelcomeViewController: UIViewController {
         
         // I installed https://cocoapods.org/ 
         
-        titleLabel.text = "⚕Aphrodite"
+        titleLabel.text = K.appName
         
         
 //        titleLabel.text = ""
 //        var charIndex = 0
 //
 //        let titleText = "⚕Aphrodite"
+//        navigationItem.hidesBackButton = true
 //        for letter in titleText{
 //            print(charIndex)
 //            print(letter)
