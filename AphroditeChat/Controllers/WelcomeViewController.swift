@@ -17,7 +17,7 @@ class WelcomeViewController: UIViewController {
         
         // I installed https://cocoapods.org/ 
         
-        titleLabel.text = K.appName
+//        titleLabel.text = K.appName
         
         
 //        titleLabel.text = ""

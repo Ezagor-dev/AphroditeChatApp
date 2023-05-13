@@ -17,37 +17,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WelcomeXCode" id="cnw-Kr-ez2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSw-1E-HHy">
-                                <rect key="frame" x="0.0" y="801" width="414" height="61"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <rect key="frame" x="-20" y="572" width="394" height="102"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="61" id="KyF-kR-LrD"/>
+                                    <constraint firstAttribute="height" constant="102" id="iyV-54-Zkk"/>
+                                    <constraint firstAttribute="width" constant="394" id="vPn-WI-Cj4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Log In">
+                                <state key="normal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="NRT-ot-KEf" kind="show" identifier="" id="2cL-BS-xu8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚕Aphrodite " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrR-vP-R0V" customClass="CLTypingLabel" customModule="CLTypingLabel">
-                                <rect key="frame" x="52" y="418" width="310" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="aHq-Zh-SAr"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
-                                <color key="textColor" name="BrandBlue"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMy-Gb-x2M">
-                                <rect key="frame" x="0.0" y="745" width="414" height="48"/>
-                                <color key="backgroundColor" name="BrandLightBlue"/>
+                                <rect key="frame" x="80.5" y="687.5" width="334" height="98"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="nKx-Q7-3sZ"/>
+                                    <constraint firstAttribute="width" constant="334" id="8i7-80-OCO"/>
+                                    <constraint firstAttribute="height" constant="98" id="sM0-Wb-QwV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Register">
+                                <state key="normal">
                                     <color key="titleColor" name="BrandBlue"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -59,22 +54,13 @@
                         <viewLayoutGuide key="safeArea" id="fji-N2-OzJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DSw-1E-HHy" firstAttribute="trailing" secondItem="fji-N2-OzJ" secondAttribute="trailing" id="5tn-fq-UfH"/>
-                            <constraint firstItem="dMy-Gb-x2M" firstAttribute="leading" secondItem="fji-N2-OzJ" secondAttribute="leading" id="A51-Po-QyN"/>
-                            <constraint firstItem="DSw-1E-HHy" firstAttribute="bottom" secondItem="fji-N2-OzJ" secondAttribute="bottom" id="Kgp-cl-Tpu"/>
-                            <constraint firstItem="fji-N2-OzJ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BrR-vP-R0V" secondAttribute="trailing" id="bNT-4t-kEP"/>
-                            <constraint firstItem="BrR-vP-R0V" firstAttribute="centerX" secondItem="tFW-5c-GJ3" secondAttribute="centerX" id="eX9-PS-jd1"/>
-                            <constraint firstItem="DSw-1E-HHy" firstAttribute="leading" secondItem="fji-N2-OzJ" secondAttribute="leading" id="i1n-9a-kIE"/>
-                            <constraint firstItem="BrR-vP-R0V" firstAttribute="leading" secondItem="fji-N2-OzJ" secondAttribute="leading" constant="52" id="kgz-8n-xoD"/>
-                            <constraint firstItem="BrR-vP-R0V" firstAttribute="centerY" secondItem="tFW-5c-GJ3" secondAttribute="centerY" id="vYT-qI-K0i"/>
-                            <constraint firstItem="DSw-1E-HHy" firstAttribute="top" secondItem="dMy-Gb-x2M" secondAttribute="bottom" constant="8" id="xj1-LZ-q4c"/>
-                            <constraint firstItem="dMy-Gb-x2M" firstAttribute="trailing" secondItem="fji-N2-OzJ" secondAttribute="trailing" id="zBe-vH-AcU"/>
+                            <constraint firstItem="DSw-1E-HHy" firstAttribute="centerY" secondItem="tFW-5c-GJ3" secondAttribute="centerY" constant="175" id="PZS-SU-fsS"/>
+                            <constraint firstItem="DSw-1E-HHy" firstAttribute="centerX" secondItem="tFW-5c-GJ3" secondAttribute="centerX" constant="-30" id="YcE-fb-CM5"/>
+                            <constraint firstItem="dMy-Gb-x2M" firstAttribute="centerY" secondItem="tFW-5c-GJ3" secondAttribute="centerY" constant="288.5" id="ZlN-jA-xtD"/>
+                            <constraint firstItem="dMy-Gb-x2M" firstAttribute="centerX" secondItem="tFW-5c-GJ3" secondAttribute="centerX" constant="40.5" id="sqe-X3-KdB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0y4-Sd-j3j"/>
-                    <connections>
-                        <outlet property="titleLabel" destination="BrR-vP-R0V" id="sY5-dK-gD8"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xIX-j0-y3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -367,15 +353,11 @@
             <point key="canvasLocation" x="-86.956521739130437" y="134.59821428571428"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="BrR-vP-R0V">
-            <size key="intrinsicContentSize" width="255" height="48"/>
-        </designable>
-    </designables>
     <inferredMetricsTieBreakers>
         <segue reference="Z43-wR-A0b"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="WelcomeXCode" width="390" height="844"/>
         <image name="paperplane.fill" catalog="system" width="128" height="118"/>
         <image name="textfield" width="298" height="93"/>
         <namedColor name="BrandBlue">
@@ -392,9 +374,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
