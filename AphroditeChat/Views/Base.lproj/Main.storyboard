@@ -21,20 +21,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSw-1E-HHy">
-                                <rect key="frame" x="-20" y="572" width="394" height="102"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="102" id="iyV-54-Zkk"/>
-                                    <constraint firstAttribute="width" constant="394" id="vPn-WI-Cj4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="NRT-ot-KEf" kind="show" identifier="" id="2cL-BS-xu8"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMy-Gb-x2M">
                                 <rect key="frame" x="80.5" y="687.5" width="334" height="98"/>
                                 <constraints>
@@ -50,17 +36,35 @@
                                     <segue destination="45h-mt-cA9" kind="show" id="gXa-yC-lIf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSw-1E-HHy">
+                                <rect key="frame" x="-16" y="598" width="394" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="iyV-54-Zkk"/>
+                                    <constraint firstAttribute="width" constant="394" id="vPn-WI-Cj4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NRT-ot-KEf" kind="show" identifier="" id="2cL-BS-xu8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fji-N2-OzJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DSw-1E-HHy" firstAttribute="centerY" secondItem="tFW-5c-GJ3" secondAttribute="centerY" constant="175" id="PZS-SU-fsS"/>
-                            <constraint firstItem="DSw-1E-HHy" firstAttribute="centerX" secondItem="tFW-5c-GJ3" secondAttribute="centerX" constant="-30" id="YcE-fb-CM5"/>
+                            <constraint firstItem="DSw-1E-HHy" firstAttribute="centerY" secondItem="tFW-5c-GJ3" secondAttribute="centerY" constant="201" id="PZS-SU-fsS"/>
+                            <constraint firstItem="DSw-1E-HHy" firstAttribute="centerX" secondItem="tFW-5c-GJ3" secondAttribute="centerX" constant="-26" id="YcE-fb-CM5"/>
                             <constraint firstItem="dMy-Gb-x2M" firstAttribute="centerY" secondItem="tFW-5c-GJ3" secondAttribute="centerY" constant="288.5" id="ZlN-jA-xtD"/>
                             <constraint firstItem="dMy-Gb-x2M" firstAttribute="centerX" secondItem="tFW-5c-GJ3" secondAttribute="centerX" constant="40.5" id="sqe-X3-KdB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0y4-Sd-j3j"/>
+                    <connections>
+                        <outlet property="loginPressed" destination="DSw-1E-HHy" id="Q1m-jh-aMx"/>
+                        <outlet property="registerPressed" destination="dMy-Gb-x2M" id="5bc-8t-U0e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xIX-j0-y3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

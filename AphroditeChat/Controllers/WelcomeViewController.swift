@@ -10,9 +10,15 @@ import CLTypingLabel
 
 class WelcomeViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel: CLTypingLabel!
+//    @IBOutlet weak var titleLabel: CLTypingLabel!
+    @IBOutlet weak var loginPressed: UIButton!
+    @IBOutlet weak var registerPressed: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let rotationAngle = 7 * CGFloat.pi / 7.7 // pi /8.1
+        loginPressed.transform = CGAffineTransform(rotationAngle: rotationAngle)
+        
         // Do any additional setup after loading the view.
         
         // I installed https://cocoapods.org/ 
@@ -35,7 +41,7 @@ class WelcomeViewController: UIViewController {
 //        }
         
     }
-
+    
 
 }
 
