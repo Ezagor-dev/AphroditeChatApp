@@ -14,6 +14,14 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var loginPressed: UIButton!
     @IBOutlet weak var registerPressed: UIButton!
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = false 
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let rotationAngle = 7 * CGFloat.pi / 7.7 // pi /8.1
