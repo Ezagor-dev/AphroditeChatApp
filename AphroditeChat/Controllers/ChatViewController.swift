@@ -45,19 +45,21 @@ class ChatViewController: UIViewController, UITextFieldDelegate {
 
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let updatedText = (textField.text as NSString?)?.replacingCharacters(in: range, with: string)
+        guard let text = textField.text else {
+            return true
+        }
         
-        if textField == messageTextfield, string == " " {
+        let updatedText = (text as NSString).replacingCharacters(in: range, with: string)
+        
+        if updatedText.trimmingCharacters(in: .whitespaces).isEmpty {
             sendButton.isHidden = true
         } else {
             sendButton.isHidden = false
         }
         
-        // Update the text field's text
-        textField.text = updatedText
-        
-        return false
+        return true
     }
+
 
     
     func loadMessages(){
