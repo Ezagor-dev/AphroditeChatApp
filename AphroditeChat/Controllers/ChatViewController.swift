@@ -8,10 +8,17 @@
 import UIKit
 import Firebase
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var sendButton: UIButton!
+    
     @IBOutlet weak var messageTextfield: UITextField!
+    
+    @IBAction func textFieldDidChange(_ sender: UITextField) {
+        updateSendButtonVisibility()
+    }
+    
     
     let db = Firestore.firestore()
     
@@ -26,8 +33,32 @@ class ChatViewController: UIViewController {
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
         
         loadMessages()
+        
+        updateSendButtonVisibility()
+        
 
     }
+    private func updateSendButtonVisibility() {
+        let isMessageEmpty = messageTextfield.text?.isEmpty ?? true
+        sendButton.isHidden = isMessageEmpty
+    }
+
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let updatedText = (textField.text as NSString?)?.replacingCharacters(in: range, with: string)
+        
+        if textField == messageTextfield, string == " " {
+            sendButton.isHidden = true
+        } else {
+            sendButton.isHidden = false
+        }
+        
+        // Update the text field's text
+        textField.text = updatedText
+        
+        return false
+    }
+
     
     func loadMessages(){
         

@@ -95,6 +95,9 @@
                                         <color key="textColor" name="BrandPurple"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textFieldDidChange:" destination="970-tO-7qx" eventType="editingChanged" id="Ar4-G5-Gk6"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjS-Nc-bxO">
                                         <rect key="frame" x="354" y="20" width="40" height="40"/>
@@ -144,7 +147,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="messageTextfield" destination="J95-mp-Ypg" id="mMB-KQ-uUU"/>
+                        <outlet property="messageTextfield" destination="J95-mp-Ypg" id="VxA-4b-GxZ"/>
+                        <outlet property="sendButton" destination="DjS-Nc-bxO" id="J9u-hI-fJ3"/>
                         <outlet property="tableView" destination="JP6-RL-Jmh" id="byt-dL-U7R"/>
                     </connections>
                 </viewController>
