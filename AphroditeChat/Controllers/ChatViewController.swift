@@ -9,6 +9,7 @@ import UIKit
 import Firebase
 
 class ChatViewController: UIViewController, UITextFieldDelegate {
+    
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var sendButton: UIButton!
@@ -51,13 +52,14 @@ class ChatViewController: UIViewController, UITextFieldDelegate {
         
         let updatedText = (text as NSString).replacingCharacters(in: range, with: string)
         
-        if updatedText.trimmingCharacters(in: .whitespaces).isEmpty {
-            sendButton.isHidden = true
-        } else {
-            sendButton.isHidden = false
-        }
-        
-        return true
+        let trimmedText = updatedText.trimmingCharacters(in: .whitespaces)
+            let uppercasedText = trimmedText.uppercased()
+            
+            textField.text = uppercasedText
+            
+            sendButton.isHidden = uppercasedText.isEmpty
+            
+            return false
     }
 
 

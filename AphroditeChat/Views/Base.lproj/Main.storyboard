@@ -94,7 +94,7 @@
                                         </constraints>
                                         <color key="textColor" name="BrandPurple"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         <connections>
                                             <action selector="textFieldDidChange:" destination="970-tO-7qx" eventType="editingChanged" id="Ar4-G5-Gk6"/>
                                         </connections>
