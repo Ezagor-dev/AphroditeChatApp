@@ -36,7 +36,7 @@
 		E604D0DA2A0E3D490011F931 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E604D0DC2A0E53360011F931 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		E604D0DD2A0E53360011F931 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
-		E6D82AB429FC075700C46460 /* AphroditeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AphroditeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6D82AB429FC075700C46460 /* Aphrodite Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aphrodite Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D82AB729FC075700C46460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6D82AB929FC075700C46460 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E6D82ABB29FC075700C46460 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 		E6D82AB529FC075700C46460 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E6D82AB429FC075700C46460 /* AphroditeChat.app */,
+				E6D82AB429FC075700C46460 /* Aphrodite Chat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E6D82AB329FC075700C46460 /* AphroditeChat */ = {
+		E6D82AB329FC075700C46460 /* Aphrodite Chat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E6D82AC829FC075800C46460 /* Build configuration list for PBXNativeTarget "AphroditeChat" */;
+			buildConfigurationList = E6D82AC829FC075800C46460 /* Build configuration list for PBXNativeTarget "Aphrodite Chat" */;
 			buildPhases = (
 				2B7DD3792118B4DF3CDEB9D0 /* [CP] Check Pods Manifest.lock */,
 				E6D82AB029FC075700C46460 /* Sources */,
@@ -164,7 +164,7 @@
 			);
 			dependencies = (
 			);
-			name = AphroditeChat;
+			name = "Aphrodite Chat";
 			packageProductDependencies = (
 				E604D0CC2A059B180011F931 /* Alamofire */,
 				E604D0D12A05AAFA0011F931 /* FirebaseAuth */,
@@ -172,7 +172,7 @@
 				E610B18D2A14256B00EA9B1B /* IQKeyboardManagerSwift */,
 			);
 			productName = AphroditeChat;
-			productReference = E6D82AB429FC075700C46460 /* AphroditeChat.app */;
+			productReference = E6D82AB429FC075700C46460 /* Aphrodite Chat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -190,7 +190,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E6D82AAF29FC075700C46460 /* Build configuration list for PBXProject "AphroditeChat" */;
+			buildConfigurationList = E6D82AAF29FC075700C46460 /* Build configuration list for PBXProject "Aphrodite Chat" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -208,7 +208,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E6D82AB329FC075700C46460 /* AphroditeChat */,
+				E6D82AB329FC075700C46460 /* Aphrodite Chat */,
 			);
 		};
 /* End PBXProject section */
@@ -430,10 +430,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = Q6BH8KCYLZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AphroditeChat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Aphrodite;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -444,7 +446,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezagor.AphroditeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -460,10 +462,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = Q6BH8KCYLZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AphroditeChat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Aphrodite;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -474,7 +478,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezagor.AphroditeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -486,7 +490,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E6D82AAF29FC075700C46460 /* Build configuration list for PBXProject "AphroditeChat" */ = {
+		E6D82AAF29FC075700C46460 /* Build configuration list for PBXProject "Aphrodite Chat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E6D82AC629FC075800C46460 /* Debug */,
@@ -495,7 +499,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E6D82AC829FC075800C46460 /* Build configuration list for PBXNativeTarget "AphroditeChat" */ = {
+		E6D82AC829FC075800C46460 /* Build configuration list for PBXNativeTarget "Aphrodite Chat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E6D82AC929FC075800C46460 /* Debug */,

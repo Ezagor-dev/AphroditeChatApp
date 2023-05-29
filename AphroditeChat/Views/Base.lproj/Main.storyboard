@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cp6-Yu-ZCc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cp6-Yu-ZCc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,7 +13,7 @@
         <!--WelcomeViewController-->
         <scene sceneID="b8p-mF-GLW">
             <objects>
-                <viewController title="WelcomeViewController" id="BaH-bC-50l" customClass="WelcomeViewController" customModule="AphroditeChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="WelcomeViewController" id="BaH-bC-50l" customClass="WelcomeViewController" customModule="Aphrodite_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tFW-5c-GJ3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,6 +65,7 @@
                     <connections>
                         <outlet property="loginPressed" destination="DSw-1E-HHy" id="Q1m-jh-aMx"/>
                         <outlet property="registerPressed" destination="dMy-Gb-x2M" id="5bc-8t-U0e"/>
+                        <segue destination="970-tO-7qx" kind="show" identifier="welcomeToChatSegue" id="luw-ai-4Wu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xIX-j0-y3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -73,7 +75,7 @@
         <!--ChatViewController-->
         <scene sceneID="h7g-ht-Y4b">
             <objects>
-                <viewController title="ChatViewController" id="970-tO-7qx" customClass="ChatViewController" customModule="AphroditeChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ChatViewController" id="970-tO-7qx" customClass="ChatViewController" customModule="Aphrodite_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LmF-Ta-js4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,7 +155,7 @@
         <!--Login View Controller-->
         <scene sceneID="XBH-RY-ILf">
             <objects>
-                <viewController id="NRT-ot-KEf" customClass="LoginViewController" customModule="AphroditeChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NRT-ot-KEf" customClass="LoginViewController" customModule="Aphrodite_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dSd-4q-LEo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,7 +164,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9E-Li-lq3" userLabel="EmailView">
-                                <rect key="frame" x="0.0" y="321" width="414" height="177"/>
+                                <rect key="frame" x="0.0" y="325" width="414" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 8_x" translatesAutoresizingMaskIntoConstraints="NO" id="6yV-4r-oAl">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
@@ -171,7 +173,7 @@
                                         <rect key="frame" x="49" y="51" width="317" height="55"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="email"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -189,7 +191,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VgC-0n-LpD" userLabel="PasswordView">
-                                <rect key="frame" x="0.0" y="398" width="414" height="218"/>
+                                <rect key="frame" x="0.0" y="402" width="414" height="218"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 8_x" translatesAutoresizingMaskIntoConstraints="NO" id="C2S-rr-Sdh">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
@@ -198,7 +200,7 @@
                                         <rect key="frame" x="49" y="48" width="317" height="58"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Squ-dQ-1xS">
                                         <rect key="frame" x="0.0" y="165" width="414" height="53"/>
@@ -257,7 +259,7 @@
         <!--RegisterViewController-->
         <scene sceneID="Sqv-DP-B8y">
             <objects>
-                <viewController title="RegisterViewController" id="45h-mt-cA9" customClass="RegisterViewController" customModule="AphroditeChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="RegisterViewController" id="45h-mt-cA9" customClass="RegisterViewController" customModule="Aphrodite_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pvk-v9-5h1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -266,7 +268,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vm2-9v-XDa" userLabel="EmailView">
-                                <rect key="frame" x="0.0" y="321" width="414" height="177"/>
+                                <rect key="frame" x="0.0" y="325" width="414" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 8_x" translatesAutoresizingMaskIntoConstraints="NO" id="s2m-8R-h9o">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
@@ -291,7 +293,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1QP-jU-lJd" userLabel="PasswordView">
-                                <rect key="frame" x="0.0" y="398" width="414" height="197"/>
+                                <rect key="frame" x="0.0" y="402" width="414" height="197"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ur-Ee-pcU">
                                         <rect key="frame" x="0.0" y="154" width="414" height="53"/>
@@ -363,7 +365,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cp6-Yu-ZCc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CSs-4r-dA9">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
@@ -382,7 +384,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Z43-wR-A0b"/>
+        <segue reference="luw-ai-4Wu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Emailx" width="378" height="72"/>
@@ -391,7 +393,7 @@
         <image name="Rectangle 8_x" width="378" height="72"/>
         <image name="Registerx" width="378" height="61"/>
         <image name="WelcomeXCode" width="390" height="844"/>
-        <image name="paperplane.fill" catalog="system" width="128" height="118"/>
+        <image name="paperplane.fill" catalog="system" width="128" height="119"/>
         <image name="registerPagex" width="390" height="844"/>
         <namedColor name="BrandBlue">
             <color red="0.16500000655651093" green="0.77999997138977051" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

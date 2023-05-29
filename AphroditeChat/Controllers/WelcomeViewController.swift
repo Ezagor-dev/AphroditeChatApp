@@ -7,6 +7,7 @@
 
 import UIKit
 import CLTypingLabel
+import Firebase
 
 class WelcomeViewController: UIViewController {
 
@@ -28,6 +29,10 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
         let rotationAngle = 7 * CGFloat.pi / 7.7 // pi /8.1
         loginPressed.transform = CGAffineTransform(rotationAngle: rotationAngle)
+        // Automatically navigate to ChatViewController if user is already logged in
+                if Auth.auth().currentUser != nil {
+                    self.performSegue(withIdentifier: K.welcomeToChatSegue, sender: self)
+                }
         
         // Do any additional setup after loading the view.
         
